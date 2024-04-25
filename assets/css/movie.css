@@ -12,7 +12,7 @@ body {
     height: 100vh;
     color: white;
     background-color: #191919;
-    background-image: url(/assets/img/StarWars/1115520.jpg);
+    background-image: url(../img/StarWars/1115520.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
