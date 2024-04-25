@@ -1,0 +1,80 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background-color: #191919;
+}
+
+/*
+header
+{
+    display: flex;
+    justify-content: center;
+    background-color: #060217;
+    padding: 2em;
+    font-size: 25px;
+    height: 3.5em;
+    font-weight: bold;
+    align-items: center;
+}
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    background-color: #2b2727; opacity: 85%;
+    gap: 1em;
+    padding: 1em;
+    font-size: 17px;
+    height: 5em;
+}
+
+header a{
+    text-decoration: none;
+}
+
+p
+{
+    text-align: left;
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.peliculas
+{
+    margin: 20px;
+}
+
+.soloparati img
+{
+    width: 320px;
+    height: 450px;
+    padding-left:15px;
+}
+
+.recomendados img
+{
+    width: 320px;
+    height: 450px;
+    padding-left:15px;
+}
+
+.destacados img
+{
+    width: 320px;
+    height: 450px;
+    padding-left:15px;
+}
