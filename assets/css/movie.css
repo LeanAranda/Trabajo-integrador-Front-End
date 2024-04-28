@@ -20,43 +20,62 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: end;
     position: sticky;
     top: 0;
-    background-color: #2b2727; opacity: 85%;
+    /*background-color: #2b2727; opacity: 85%;*/
+    background-color: #131313ce;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section{
+    margin: 2em;
     gap: 1em;
-    padding: 1em;
     font-size: 17px;
-    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 a{
-    color: rgb(255, 255, 255);
-    text-decoration-line: none;
+    text-decoration: none;
+    color: white;
+}
+
+header .logo{
+    width: 300px;
+}
+
+@media only screen and (max-width: 740px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header section {
+        margin: 1em;
+    }
 }
 
 main {
-    background-color: #0c0c0c42;
+    background-color: #0c0c0c1a;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer {
-    background-color: #0c0c0c84;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
 
 
 .content{
     color: rgb(194, 194, 194);
-    background-color: #00000054;
+    /*
+    background-color: #00000083;
+    */
+    background-color: #000000cc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,26 +91,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.botones{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btn-play{
-    background-color: white;
-    color: black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 8px;
-    gap: 10px;
-    border: black;
 }
 
 .trailer{
@@ -123,18 +122,41 @@ footer {
 position: absolute;
 display: block;
 margin-left: -20px;
-background-color: #2b2727;
+background-color: #131313ce;
 width: max-content;
 }
 
-ol {
+.dropdown_content ol {
     padding: 5%;
 }
 
-a :hover {
+.dropdown_content a :hover {
     background-color: rgb(62, 65, 65);
 }
 
 h3 {
     text-shadow: #000000 ;  
+}
+
+footer {
+    background-color: #131313ce;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer section{
+    
+    margin: 2em;
 }

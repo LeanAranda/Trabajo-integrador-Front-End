@@ -10,29 +10,15 @@
 body
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/Fondo\ de\ Pantalla.png) no-repeat;
+    background: url(../img/Fondo\ de\ Pantalla.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
-
-/*header
-{
-    display: flex;
-    justify-content: center;
-    background-color: #060217;
-    padding: 2em;
-    font-size: 25px;
-    height: 3.5em;
-    font-weight: bold;
-    align-items: center;
-}
-
-a
-{
-    margin: 20px;
-}*/
 
 .container
 {
