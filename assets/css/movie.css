@@ -12,11 +12,15 @@ body {
     height: 100vh;
     color: white;
     background-color: #191919;
+    /* 
     background-image: url(../img/StarWars/1115520.jpg);
+    */
+    
+    background-image: url(../img/StarWars/wallpaper.jpg);
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
 }
 
 header {
@@ -24,13 +28,14 @@ header {
     top: 0;
     /*background-color: #2b2727; opacity: 85%;*/
     background-color: #131313ce;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
-header section{
+header section {
     margin: 2em;
     gap: 1em;
     font-size: 17px;
@@ -40,29 +45,19 @@ header section{
     height: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-header .logo{
+header .logo {
     width: 300px;
 }
 
-@media only screen and (max-width: 740px) {
-
-    header {
-        flex-direction: column;
-    }
-
-    header section {
-        margin: 1em;
-    }
-}
-
 main {
-    background-color: #0c0c0c1a;
-
+    
+    background-color: #0c0c0c5b;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +65,7 @@ main {
 
 
 
-.content{
+.content {
     color: rgb(194, 194, 194);
     /*
     background-color: #00000083;
@@ -84,34 +79,45 @@ main {
     border-radius: 30px;
     margin: 5%;
     padding: 3%;
-    gap: 10px;
+    gap: 20px;
 }
 
-.movie_logo {    
+.movie_logo {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.trailer{
-    margin: 10px 0;
+.trailer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
 
-.info{
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.info {
     padding: 2%
 }
 
-#logo{
-    width: 30%;
-}
-
-#video{
-    width: 85%;
+#logo {
+    width: 50%;
 }
 
 .dropdown {
     display: inline-block;
-    position: relative; 
+    position: relative;
 }
 
 .dropdown_content {
@@ -119,11 +125,11 @@ main {
 }
 
 .dropdown:hover .dropdown_content {
-position: absolute;
-display: block;
-margin-left: -20px;
-background-color: #131313ce;
-width: max-content;
+    position: absolute;
+    display: block;
+    margin-left: -20px;
+    background-color: #131313ce;
+    width: max-content;
 }
 
 .dropdown_content ol {
@@ -135,7 +141,7 @@ width: max-content;
 }
 
 h3 {
-    text-shadow: #000000 ;  
+    text-shadow: #000000;
 }
 
 footer {
@@ -144,19 +150,35 @@ footer {
     flex-direction: column;
 }
 
-.footer-1{
+.footer-1 {
     display: flex;
     flex-direction: column;
 }
 
-.icons{
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
 }
 
-footer section{
-    
+footer section {
+
     margin: 2em;
+}
+
+@media only screen and (max-width: 740px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header section {
+        margin: 1em;
+    }
+
+    .content{
+        margin: 10% 0%;
+        border-radius: 0;
+    }
 }

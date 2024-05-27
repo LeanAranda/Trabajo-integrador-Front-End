@@ -107,9 +107,12 @@ body
 
 .container .register-link
 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-size: 14.5px;
     text-align: center;
-    margin: 20px 0px 20px;
+    margin: 20px 0px 0px;
 }
 
 .register-link p a

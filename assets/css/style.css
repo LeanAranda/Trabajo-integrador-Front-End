@@ -85,14 +85,19 @@ footer section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    /*
     backdrop-filter: blur(4px);
-    background: linear-gradient(transparent, #1f0329);
+    */
+    background: linear-gradient(rgba(0, 0, 0, 0.150), #1f0329);
 }
 
 .princ-content h1{
     font-size: 5vw;
     font-weight: 300;
+}
+
+.star{
+    color: #FFD43B;
 }
 
 .buttons{
@@ -190,6 +195,14 @@ input.bar:focus {
     width: 100%;
 }
 
+.title{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    background-color: #131313;
+    padding: 2%;
+}
+
 @media only screen and (max-width: 740px) {
 
     header {
@@ -199,21 +212,20 @@ input.bar:focus {
     header section {
         margin: 1em;
     }
-
-    .princ-content h1{
-        font-size: 100%;
-        font-weight: 300;
+    
+    .busqueda h1{
+        font-size: x-large;
     }
 
+    .bar{
+        font-size: large;
+    }
+    
     .card{
         width: 150px;
     }
-}
 
-.title{
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    background-color: #131313;
-    padding: 2%;
+    .title{
+        font-size: x-large;
+    }
 }
