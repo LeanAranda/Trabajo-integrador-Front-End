@@ -12,4 +12,3 @@ Integrantes:
 - Leandro Aranda
 - Camila Díaz
 - Góngora Jonatan
-- Pablo Ristorto
