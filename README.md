@@ -3,11 +3,11 @@ Trabajo práctico que simula un sitio web de streaming de películas y series.
 
 El proyecto consta de 3 páginas:
 
-Inicio / home: página principal donde se puede acceder al catálogo de películas y acceder a las demás páginas.
+Inicio / home: página principal donde se puede acceder al catálogo de películas y a las demás páginas.
 
 Iniciar sesión / login: formulario de inicio de sesión.
 
-Película / movie: donde se encuentra el trailer de la película y una sinápsis de la misma.
+Película / movie: información relacionada a una película (trailer, sinápsis, etc).
 
 Tecnologías utilizadas:
 - Html
